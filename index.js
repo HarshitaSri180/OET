@@ -1,4 +1,3 @@
-
 const testimonialsContainer = document.querySelector(".testimonials-container");
 const testimonial = document.querySelector(".testimonial");
 const userImage = document.querySelector(".user-image");
@@ -13,31 +12,29 @@ const testimonials = [
     name: "June Cha",
     position: "Doctor",
     photo: "https://randomuser.me/api/portraits/women/44.jpg",
-    text:
-"The course transformed my approach to patient interactions! Highly recommend!" 
+    text: "The course transformed my approach to patient interactions! Highly recommend!",
   },
 
-   {
+  {
     name: "Renee Sims",
     position: "Senior DOctor",
     photo: "https://randomuser.me/api/portraits/women/8.jpg",
-    text:
-      "The course transformed my approach to patient interactions! Highly recommend!"
+    text: "The course transformed my approach to patient interactions! Highly recommend!",
   },
   {
     name: "Sasha Ho",
     position: "Student",
     photo:
       "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?h=350&auto=compress&cs=tinysrgb",
-    text:
-"The course transformed my approach to patient interactions! Highly recommend!"  },
-{
+    text: "The course transformed my approach to patient interactions! Highly recommend!",
+  },
+  {
     name: "Nikhil",
     position: "Student",
     photo:
       "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?h=350&auto=compress&cs=tinysrgb",
-    text:
-"The course transformed my approach to patient interactions! Highly recommend!"  },
+    text: "The course transformed my approach to patient interactions! Highly recommend!",
+  },
 ];
 
 let idx = 0;
@@ -83,26 +80,25 @@ btnPrev.addEventListener("click", () => {
 
 displayTestimonial();
 function toggleAccordion(bodyId) {
-    const body = document.getElementById(bodyId);
-    const icon = document.getElementById(`icon-${bodyId.split('-')[1]}`);
+  const body = document.getElementById(bodyId);
+  const icon = document.getElementById(`icon-${bodyId.split("-")[1]}`);
 
-    if (body.classList.contains('hidden')) {
-        body.classList.remove('hidden');
-        icon.classList.add('rotate-180');
-    } else {
-        body.classList.add('hidden');
-        icon.classList.remove('rotate-180');
-    }
+  if (body.classList.contains("hidden")) {
+    body.classList.remove("hidden");
+    icon.classList.add("rotate-180");
+  } else {
+    body.classList.add("hidden");
+    icon.classList.remove("rotate-180");
+  }
 }
-document.getElementById('body-1').classList.remove('hidden');
-document.getElementById('icon-1').classList.add('rotate-180');
+document.getElementById("body-1").classList.remove("hidden");
+document.getElementById("icon-1").classList.add("rotate-180");
 
-    const toggleButton = document.querySelector('[data-collapse-toggle]');
-    const mobileMenu = document.getElementById('mobile-menu-2');
+const toggleButton = document.querySelector("[data-collapse-toggle]");
+const mobileMenu = document.getElementById("mobile-menu-2");
 
-    toggleButton.addEventListener('click', () => {
-        const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true';
-        toggleButton.setAttribute('aria-expanded', !isExpanded);
-        mobileMenu.style.display = isExpanded ? 'none' : 'flex'; // Toggle display
-    });
-
+toggleButton.addEventListener("click", () => {
+  const isExpanded = toggleButton.getAttribute("aria-expanded") === "true";
+  toggleButton.setAttribute("aria-expanded", !isExpanded);
+  mobileMenu.style.display = isExpanded ? "none" : "flex"; // Toggle display
+});
