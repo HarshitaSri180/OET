@@ -1,0 +1,35 @@
+{
+  "name": "oct",
+  "version": "1.0.0",
+  "description": " ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "keywords": [
+    "landing",
+    "page",
+    "tailwind",
+    "tailwind",
+    "css",
+    "flowbite",
+    "responsive",
+    "html",
+    "css",
+    "javascript",
+    "design"
+  ],
+  "author": "Themesberg",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "tailwindcss": "^3.1.4"
+  },
+  "dependencies": {
+    "flowbite": "^1.4.7"
+  }
+}
